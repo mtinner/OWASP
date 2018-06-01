@@ -1,0 +1,31 @@
+{
+	"name": "owasp",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.ts",
+	"scripts": {
+		"buildClient": "webpack --config ./src/client/webpack.config.js",
+		"buildServer": "ts-node ./src/server/index.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mtinner/OWASP.git"
+	},
+	"author": "mtinner",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"express": "^4.16.3",
+		"http": "0.0.0",
+		"mongodb": "^2.2.26"
+	},
+	"devDependencies": {
+		"@types/body-parser": "^1.17.0",
+		"@types/express": "^4.11.1",
+		"@types/mongodb": "^2.2.2",
+		"babel-core": "^6.24.1",
+		"babel-loader": "^7.0.0",
+		"ts-node": "^6.0.5",
+		"typescript": "^2.3.2"
+	}
+}
