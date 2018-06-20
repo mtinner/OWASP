@@ -1,6 +1,12 @@
 var path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+
 
 module.exports = {
+    plugins: [
+        new CopyWebpackPlugin([     { from: 'src/client/index.html', to: './' },
+        ])
+    ],
     entry: {
         client: './src/client/index.ts'
     },

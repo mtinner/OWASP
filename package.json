@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.ts",
 	"scripts": {
-		"buildClient": "webpack --config ./src/client/webpack.config.js",
+		"buildClient": "webpack --config ./src/client/webpack.config.js --mode=development",
 		"buildServer": "ts-node ./src/server/index.ts"
 	},
 	"repository": {
@@ -25,7 +25,11 @@
 		"@types/mongodb": "^2.2.2",
 		"babel-core": "^6.24.1",
 		"babel-loader": "^7.0.0",
+		"copy-webpack-plugin": "^4.5.1",
+		"ts-loader": "^4.4.1",
 		"ts-node": "^6.0.5",
-		"typescript": "^2.3.2"
+		"typescript": "^2.9.2",
+		"webpack": "^4.12.0",
+		"webpack-cli": "^3.0.8"
 	}
 }

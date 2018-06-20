@@ -2,7 +2,7 @@ import * as express from 'express';
 import { RequestHandler, Router } from 'express-serve-static-core';
 import { IRoutes } from './IRoutes';
 
-export class CustomerRoutes implements IRoutes {
+export class MessageRoutes implements IRoutes {
 	private router: Router;
 
 	constructor() {
@@ -14,15 +14,13 @@ export class CustomerRoutes implements IRoutes {
 			this.router.get('/', (req, res) => {
 				res.status(200).send({});
 			}),
+			this.router.post('/', (req, res) => {
+				res.status(200).send({});
+			}),
 			this.router.get('/:id', (req, res) => {
 				console.log(req.params['id']);
 				res.status(200).send({});
-			}),
-			this.router.post('/orders/',
-				(req, res) => {
-
-					res.status(200).send({ ok: 42 });
-				})
+			})
 		];
 	}
 }

@@ -1,6 +1,3 @@
-import {MySocket} from './Socket';
 {
-
-    let socket = new MySocket();
-    socket.start();
+	console.log('asdf');
 }
