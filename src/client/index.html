@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-  <script src="client.bundle.js"></script>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="client.bundle.js"></script>
 </head>
 <body>
 <h1>OWASP</h1>
+<label id="text">Enter new message:</label>
+<input name="text" type="text"/>
+<br>
+<input type="button" value="test" onclick="send(document.getElementsByName('text')[0].value)"/>
 </body>
 </html>

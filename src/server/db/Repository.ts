@@ -6,7 +6,7 @@ export class Repository {
 	constructor(documentName) {
 		// TODO open close wrapper --> not in constructor
 		this.connectionPromise = new Promise(function (resolve, reject) {
-			let url = 'mongodb://localhost:27017/hls';
+			let url = 'mongodb://localhost:27017/message';
 			MongoClient.connect(url, (err, db) => {
 				console.log('Error: ', err);
 				let collection = db.collection(documentName);

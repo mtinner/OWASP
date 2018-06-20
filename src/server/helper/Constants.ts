@@ -1,3 +1,3 @@
 export const constants = {
-	PORT: 1900,
+	PORT: 2400,
 };
